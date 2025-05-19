@@ -150,13 +150,21 @@
   }
 }
 
+
 .hearty-welcome {
   font-family: "Playwrite DK Loopet", cursive;
   font-size: 2rem;
   color: #c2185b;
   text-align: center;
-  animation: fadeSlideUp 2s ease-out forwards;
   margin: 20px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.hearty-welcome.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
@@ -176,6 +184,7 @@
     }
   </style>
 </head>
+  
 <body>
 
   <div class="invitation-card">
@@ -203,7 +212,8 @@
   <p>🕖 19:00 hrs onwards</p>
 </div>
 
-<h2 class="hearty-welcome">Hearty Welcome to All</h2>
+<h2 class="hearty-welcome hidden">Hearty Welcome to All</h2>
+
 
     
     <footer class="custom-footer">
@@ -214,7 +224,22 @@
 
     
   </div>
-  
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.hearty-welcome').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+
 
 </body>
 </html>
