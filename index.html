@@ -24,16 +24,18 @@
       font-family: 'Great Vibes', cursive;
       font-size: 3rem;
       color: #d6336c;
-      animation: blink 2s infinite;
+      animation: blink 2.2s infinite;
       margin-bottom: 10px;
     }
 
-    .blinking-footer {
-      font-family: 'Great Vibes', cursive;
-      font-size: 2rem;
-      color: #1e88e5;
-      animation: blink 2.2s infinite;
-      margin-top: 30px;
+    .subheading {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      font-weight: bold;
+      border-bottom: 2px dashed #d6336c;
+      display: inline-block;
+      margin-bottom: 24px;
+      padding-bottom: 8px;
     }
 
     @keyframes blink {
@@ -41,33 +43,31 @@
       25%, 75% { opacity: 0; }
     }
 
-    .subheading {
-      font-size: 1.5rem;
-      color: #333;
-      margin-bottom: 24px;
-    }
-
     .invite-image {
       width: 100%;
       max-width: 500px;
       height: auto;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       margin-bottom: 24px;
     }
 
     .person-info {
       font-size: 1.1rem;
-      font-weight: 500;
       color: #444;
       margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .person-info .name {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #000;
     }
 
     .welcome-message {
       font-size: 1.1rem;
       font-style: italic;
       color: #2c3e50;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .event-details {
@@ -83,13 +83,21 @@
       color: #d6336c;
     }
 
+    .blinking-footer {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      color: #1e88e5;
+      animation: blink 2.5s infinite;
+      margin-top: 30px;
+    }
+
     @media (max-width: 480px) {
       .blinking-heading {
         font-size: 2.4rem;
       }
 
       .subheading {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
 
       .blinking-footer {
@@ -107,14 +115,16 @@
 <body>
 
   <div class="blinking-heading">Invitation</div>
+
   <div class="subheading">Retirement Farewell Ceremony</div>
 
-  <!-- Replace 'invitation.jpg' with actual file or URL -->
+  <!-- Plain image without border/shadow -->
   <img src="jayarajan.jpg" alt="Invitation Card" class="invite-image" />
 
   <div class="person-info">
-    Shri K Jararajan<br/>
-    Loco Pilot Mail, Madgaon, KRCL
+    <div class="name">Shri K Jararajan</div>
+    Loco Pilot Mail<br/>
+    Madgaon, KRCL
   </div>
 
   <div class="welcome-message">
