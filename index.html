@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Retirement Invitation</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:wght@600&family=Dancing+Script&family=Satisfy&display=swap" rel="stylesheet">
 
   <style>
     body {
       background-color: #fff8f0;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Playfair Display', serif;
       margin: 0;
       padding: 20px;
       display: flex;
@@ -29,12 +29,11 @@
     }
 
     .blinking-heading {
-      font-family: 'Great Vibes', cursive;
+      font-family: 'Cinzel Decorative', cursive;
       font-size: 3rem;
       color: #d6336c;
-      animation: blink 2.2s infinite;
+      animation: blink 1s infinite;
       margin-bottom: 10px;
-      font-weight: bold;
     }
 
     .ceremony-box {
@@ -52,44 +51,43 @@
       width: 100%;
       max-width: 500px;
       height: auto;
-      margin: 10px 0;
-      padding: 0;
+      margin: 5px 0;
     }
 
-    .name-box {
-      background-color: #fff3cd;
-      padding: 10px 16px;
+    .person-name {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.6rem;
       font-weight: bold;
-      font-size: 1.3rem;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      border: 2px solid #f0ad4e;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      color: #000;
     }
 
-    .designation-box {
-      background-color: #d1ecf1;
-      padding: 8px 14px;
+    .designation {
       font-size: 1.1rem;
-      border-radius: 8px;
+      color: #444;
       margin-bottom: 16px;
-      border: 2px solid #0dcaf0;
-      color: #055160;
+    }
+
+    .event-box {
+      background-color: #f1f1f1;
+      border-left: 5px solid #d6336c;
+      padding: 12px;
+      margin: 10px 0;
+      text-align: left;
+      border-radius: 8px;
+    }
+
+    .event-box strong {
+      color: #d6336c;
     }
 
     .welcome-message {
-      font-family: 'Pacifico', cursive;
+      font-family: 'Satisfy', cursive;
       font-size: 1.4rem;
       color: #e91e63;
-      margin-top: 20px;
+      margin-top: 30px;
       margin-bottom: 10px;
-    }
-
-    .event-details {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 20px;
-      line-height: 1.6;
-      padding: 0 10px;
     }
 
     .date {
@@ -101,7 +99,7 @@
       font-family: 'Great Vibes', cursive;
       font-size: 2rem;
       color: #1e88e5;
-      animation: blink 2.5s infinite;
+      animation: blink 1.2s infinite;
       margin-top: 10px;
     }
 
@@ -119,20 +117,24 @@
         font-size: 1.3rem;
       }
 
-      .blinking-footer {
-        font-size: 1.6rem;
+      .person-name {
+        font-size: 1.4rem;
+      }
+
+      .designation {
+        font-size: 1rem;
+      }
+
+      .event-box {
+        font-size: 0.95rem;
       }
 
       .welcome-message {
         font-size: 1.2rem;
       }
 
-      .name-box, .designation-box {
-        font-size: 1rem;
-      }
-
-      .event-details {
-        font-size: 0.95rem;
+      .blinking-footer {
+        font-size: 1.6rem;
       }
     }
   </style>
@@ -146,23 +148,25 @@
 
     <img src="invitation.jpg" alt="Invitation Card" class="invite-image" />
 
-    <div class="name-box">Shri K Jayarajan</div>
+    <div class="person-name">Shri K Jararajan</div>
+    <div class="designation">Loco Pilot Mail<br/>Madgaon, KRCL</div>
 
-    <div class="designation-box">
-      Loco Pilot Mail<br/>
-      Madgaon, KRCL
+    <div class="event-box">
+      <strong>Receiving:</strong> Combined Crew Lobby, Madgaon<br/>
+      <strong>Time:</strong> 16:00 hours onwards<br/>
+      <strong>Train:</strong> Receiving by Train No: 12618
     </div>
 
-    <div class="event-details">
-      🚉 Receiving at <strong>Combined Crew Lobby, Madgaon</strong><br/>
-      <strong>at 16:00 hours</strong> (by train no: 12618)<br/><br/>
-      🎤 <strong>Retirement Function</strong> at<br/>
-      <strong>Railway Community Hall, Madgaon</strong><br/>
-      <strong>at 19:00 hours onwards</strong><br/><br/>
-      📅 <span class="date">Date: 31/05/2025</span>
+    <div class="event-box">
+      <strong>Function:</strong> Railway Community Hall, Madgaon<br/>
+      <strong>Time:</strong> 19:00 hours onwards
     </div>
 
-    <div class="welcome-message">HEARTY WELCOME TO ALL</div>
+    <div class="event-box">
+      <strong>Date:</strong> 31/05/2025
+    </div>
+
+    <div class="welcome-message">Hearty Welcome to All</div>
 
     <div class="blinking-footer">Happy Retirement!</div>
   </div>
