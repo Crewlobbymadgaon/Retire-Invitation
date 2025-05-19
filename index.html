@@ -59,6 +59,13 @@
   font-weight: 200;
   font-style: normal;
 }
+    .blinking-footer {
+      font-family: "Playwrite DK Loopet", cursive;
+      font-size: 2rem;
+      color: #1e88e5;
+      animation: blink 2.5s infinite;
+      margin-top: 10px;
+    }
 
 
     .invite-image {
@@ -129,6 +136,27 @@
   line-height: 1.6;
   font-size: 1.6rem;
 }
+    .custom-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+}
+
 
 
     
@@ -172,7 +200,7 @@
     <div class="blinking-heading">Invitation</div>
 
     <div class="ceremony-box">Retirement Farewell Ceremony</div>
-<div class="playwrite-dk-loopet-<uniquifier>">Happy Retirement!</div>
+<div class="blinking-footer">Happy Retirement!</div>
     <img src="invitation.jpg" alt="Invitation Card" class="invite-image" />
 
     <div class="person-name">Shri K JAYARAJAN</div>
@@ -199,9 +227,15 @@
 
 
     <div class="welcome-message">Hearty Welcome to All</div>
+    <footer class="custom-footer">
+  <img src="logo.png" alt="Running Staff Logo" class="footer-logo">
+  <span>Best wishes – <strong>Running Staff Madgaon</strong></span>
+</footer>
+
 
     
   </div>
+  
 
 </body>
 </html>
