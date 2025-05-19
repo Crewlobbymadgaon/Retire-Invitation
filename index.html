@@ -6,7 +6,7 @@
   <title>Retirement Invitation</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&family=Pacifico&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -28,46 +28,51 @@
       margin-bottom: 10px;
     }
 
-    .subheading {
-      font-size: 1.8rem;
+    .ceremony-box {
+      background-color: #ffe4e1;
       color: #2c3e50;
+      padding: 12px 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
       font-weight: bold;
-      border-bottom: 2px dashed #d6336c;
       display: inline-block;
-      margin-bottom: 24px;
-      padding-bottom: 8px;
-    }
-
-    @keyframes blink {
-      0%, 50%, 100% { opacity: 1; }
-      25%, 75% { opacity: 0; }
+      border: 2px dashed #d6336c;
     }
 
     .invite-image {
       width: 100%;
       max-width: 500px;
       height: auto;
-      margin-bottom: 24px;
+      margin: 20px 0;
+      padding: 5px;
     }
 
-    .person-info {
-      font-size: 1.1rem;
-      color: #444;
-      margin-bottom: 12px;
-      line-height: 1.6;
-    }
-
-    .person-info .name {
+    .name-box {
+      background-color: #fff3cd;
+      padding: 10px 16px;
       font-weight: bold;
       font-size: 1.3rem;
-      color: #000;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border: 2px solid #f0ad4e;
+    }
+
+    .designation-box {
+      background-color: #d1ecf1;
+      padding: 8px 14px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      border: 2px solid #0dcaf0;
+      color: #055160;
     }
 
     .welcome-message {
-      font-size: 1.1rem;
-      font-style: italic;
-      color: #2c3e50;
-      margin-bottom: 12px;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.4rem;
+      color: #e91e63;
+      margin-bottom: 14px;
     }
 
     .event-details {
@@ -91,23 +96,34 @@
       margin-top: 30px;
     }
 
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+
     @media (max-width: 480px) {
       .blinking-heading {
         font-size: 2.4rem;
       }
 
-      .subheading {
-        font-size: 1.4rem;
+      .ceremony-box {
+        font-size: 1.3rem;
       }
 
       .blinking-footer {
         font-size: 1.6rem;
       }
 
-      .person-info,
-      .welcome-message,
-      .event-details {
+      .welcome-message {
+        font-size: 1.2rem;
+      }
+
+      .name-box, .designation-box {
         font-size: 1rem;
+      }
+
+      .event-details {
+        font-size: 0.95rem;
       }
     }
   </style>
@@ -116,20 +132,18 @@
 
   <div class="blinking-heading">Invitation</div>
 
-  <div class="subheading">Retirement Farewell Ceremony</div>
+  <div class="ceremony-box">Retirement Farewell Ceremony</div>
 
-  <!-- Plain image without border/shadow -->
   <img src="jayarajan.jpg" alt="Invitation Card" class="invite-image" />
 
-  <div class="person-info">
-    <div class="name">Shri K Jararajan</div>
+  <div class="name-box">Shri K Jararajan</div>
+
+  <div class="designation-box">
     Loco Pilot Mail<br/>
     Madgaon, KRCL
   </div>
 
-  <div class="welcome-message">
-    Hearty welcome to all
-  </div>
+  <div class="welcome-message">Hearty Welcome to All</div>
 
   <div class="event-details">
     🚉 Receiving at <strong>Combined Crew Lobby, Madgaon</strong><br/>
