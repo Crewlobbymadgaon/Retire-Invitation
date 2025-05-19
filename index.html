@@ -139,16 +139,28 @@
 .event-box strong {
       color: #d6336c;
     }
+    @keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    .welcome-message {
-      font-family: "Playwrite DK Loopet", cursive;
-      font-size: 1.4rem;
-      color: #e91e63;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      font-weight: bold;
-      font-weight: bold;
-    }
+.hearty-welcome {
+  font-family: "Playwrite DK Loopet", cursive;
+  font-size: 2rem;
+  color: #c2185b;
+  text-align: center;
+  animation: fadeSlideUp 2s ease-out forwards;
+  margin: 20px 0;
+}
+
+
+   
 
    @keyframes blink {
       0%, 50%, 100% { opacity: 1; }
@@ -191,8 +203,9 @@
   <p>🕖 19:00 hrs onwards</p>
 </div>
 
+<h2 class="hearty-welcome">Hearty Welcome to All</h2>
 
-    <div class="welcome-message">Hearty Welcome to All</div>
+    
     <footer class="custom-footer">
   <img src="logo.png" alt="Running Staff Logo" class="footer-logo">
   <span>With Best wishes<br/><strong>Running Staff Madgaon</strong></span>
