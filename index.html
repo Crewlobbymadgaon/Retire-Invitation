@@ -12,12 +12,20 @@
     body {
       background-color: #fff8f0;
       font-family: 'Roboto', sans-serif;
-      text-align: center;
       margin: 0;
       padding: 20px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: center;
+    }
+
+    .invitation-card {
+      background-color: #ffffff;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
     }
 
     .blinking-heading {
@@ -37,15 +45,14 @@
       font-size: 1.6rem;
       font-weight: bold;
       display: inline-block;
-      border: 2px dashed #d6336c;
     }
 
     .invite-image {
       width: 100%;
       max-width: 500px;
       height: auto;
-      margin: 20px 0;
-      padding: 5px;
+      margin: 10px 0;
+      padding: 0;
     }
 
     .name-box {
@@ -72,7 +79,8 @@
       font-family: 'Pacifico', cursive;
       font-size: 1.4rem;
       color: #e91e63;
-      margin-bottom: 14px;
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
 
     .event-details {
@@ -93,7 +101,7 @@
       font-size: 2rem;
       color: #1e88e5;
       animation: blink 2.5s infinite;
-      margin-top: 30px;
+      margin-top: 10px;
     }
 
     @keyframes blink {
@@ -130,31 +138,33 @@
 </head>
 <body>
 
-  <div class="blinking-heading">Invitation</div>
+  <div class="invitation-card">
+    <div class="blinking-heading">Invitation</div>
 
-  <div class="ceremony-box">Retirement Farewell Ceremony</div>
+    <div class="ceremony-box">Retirement Farewell Ceremony</div>
 
-  <img src="jayarajan.jpg" alt="Invitation Card" class="invite-image" />
+    <img src="jayarajan.jpg" alt="Invitation Card" class="invite-image" />
 
-  <div class="name-box">Shri K Jararajan</div>
+    <div class="name-box">Shri K Jararajan</div>
 
-  <div class="designation-box">
-    Loco Pilot Mail<br/>
-    Madgaon, KRCL
+    <div class="designation-box">
+      Loco Pilot Mail<br/>
+      Madgaon, KRCL
+    </div>
+
+    <div class="event-details">
+      🚉 Receiving at <strong>Combined Crew Lobby, Madgaon</strong><br/>
+      <strong>at 16:00 hours onwards</strong> (by train no: 12618)<br/><br/>
+      🎤 <strong>Retirement Function</strong> at<br/>
+      <strong>Railway Community Hall, Madgaon</strong><br/>
+      <strong>at 19:00 hours onwards</strong><br/><br/>
+      📅 <span class="date">Date: 31/05/2025</span>
+    </div>
+
+    <div class="welcome-message">Hearty Welcome to All</div>
+
+    <div class="blinking-footer">Happy Retirement!</div>
   </div>
-
-  <div class="welcome-message">Hearty Welcome to All</div>
-
-  <div class="event-details">
-    🚉 Receiving at <strong>Combined Crew Lobby, Madgaon</strong><br/>
-    <strong>at 16:00 hours onwards</strong> (by train no: 12618)<br/><br/>
-    🎤 <strong>Retirement Function</strong> at<br/>
-    <strong>Railway Community Hall, Madgaon</strong><br/>
-    <strong>at 19:00 hours onwards</strong><br/><br/>
-    📅 <span class="date">Date: 31/05/2025</span>
-  </div>
-
-  <div class="blinking-footer">Happy Retirement!</div>
 
 </body>
 </html>
