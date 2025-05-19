@@ -15,15 +15,17 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      padding: 40px 20px;
       margin: 0;
     }
 
     .blinking-text {
       font-family: 'Great Vibes', cursive;
-      font-size: 64px;
+      font-size: 48px; /* Adjusted for balance */
       color: #d6336c;
-      animation: blink 2s infinite;
+      animation: blink 1s infinite;
+      text-align: center;
+      margin-bottom: 24px;
     }
 
     @keyframes blink {
@@ -32,8 +34,8 @@
     }
 
     .invite-image {
-      margin-top: 20px;
-      max-width: 90%;
+      max-width: 500px; /* Max width to balance text */
+      width: 100%;
       height: auto;
       border-radius: 16px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -43,7 +45,7 @@
 <body>
   <div class="blinking-text">Invitation</div>
 
-  <!-- Replace 'your-image.jpg' with your image path or URL -->
+  <!-- Replace 'invitation.jpg' with your image file name or URL -->
   <img src="jayarajan.jpg" alt="Invitation Card" class="invite-image" />
 </body>
 </html>
