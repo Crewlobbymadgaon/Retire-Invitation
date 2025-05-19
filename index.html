@@ -5,25 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Retirement Invitation</title>
 
-  <!-- Stylish Google Fonts -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
 
   <style>
     body {
       background-color: #fff8f0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 20px;
-      margin: 0;
       font-family: 'Roboto', sans-serif;
       text-align: center;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .blinking-heading {
       font-family: 'Great Vibes', cursive;
-      font-size: 60px;
+      font-size: 3rem;
       color: #d6336c;
       animation: blink 2s infinite;
       margin-bottom: 10px;
@@ -31,7 +30,7 @@
 
     .blinking-footer {
       font-family: 'Great Vibes', cursive;
-      font-size: 36px;
+      font-size: 2rem;
       color: #1e88e5;
       animation: blink 2.2s infinite;
       margin-top: 30px;
@@ -43,14 +42,14 @@
     }
 
     .subheading {
-      font-size: 24px;
+      font-size: 1.5rem;
       color: #333;
       margin-bottom: 24px;
     }
 
     .invite-image {
-      max-width: 500px;
       width: 100%;
+      max-width: 500px;
       height: auto;
       border-radius: 16px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -58,30 +57,50 @@
     }
 
     .person-info {
-      font-size: 20px;
+      font-size: 1.1rem;
       font-weight: 500;
       color: #444;
       margin-bottom: 12px;
     }
 
     .welcome-message {
-      font-size: 20px;
+      font-size: 1.1rem;
       font-style: italic;
       color: #2c3e50;
       margin-bottom: 10px;
     }
 
     .event-details {
-      font-size: 18px;
+      font-size: 1rem;
       color: #555;
       margin-bottom: 20px;
       line-height: 1.6;
+      padding: 0 10px;
     }
 
     .date {
       font-weight: bold;
       color: #d6336c;
-      font-size: 18px;
+    }
+
+    @media (max-width: 480px) {
+      .blinking-heading {
+        font-size: 2.4rem;
+      }
+
+      .subheading {
+        font-size: 1.2rem;
+      }
+
+      .blinking-footer {
+        font-size: 1.6rem;
+      }
+
+      .person-info,
+      .welcome-message,
+      .event-details {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -90,6 +109,7 @@
   <div class="blinking-heading">Invitation</div>
   <div class="subheading">Retirement Farewell Ceremony</div>
 
+  <!-- Replace 'invitation.jpg' with actual file or URL -->
   <img src="jayarajan.jpg" alt="Invitation Card" class="invite-image" />
 
   <div class="person-info">
