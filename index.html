@@ -166,16 +166,21 @@
   opacity: 1;
   transform: translateY(0);
 }
-    .happy-retirement {
-  font-family: 'Pacifico', cursive; /* or a special font you like */
+    
+
+
+/* Initial hidden state */
+.happy-retirement {
+   font-family: "Playwrite DK Loopet", cursive;
   font-size: 1.8rem;
   text-align: center;
-  color: #00695c;
+  color: #00897b;
   opacity: 0;
   transform: scale(0.8);
   transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
+/* Visible state triggers animation */
 .happy-retirement.visible {
   opacity: 1;
   transform: scale(1);
@@ -255,6 +260,24 @@
     });
   });
 </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Optional: stop observing once animated
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.happy-retirement').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+
  
 
 
